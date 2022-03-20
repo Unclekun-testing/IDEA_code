@@ -1,0 +1,1 @@
+{"uuid":"453b7a06-e9ad-466f-81e6-68dfb2424675","name":"测试套件","children":["fc6d9c9b-87f2-4ca7-a6c8-4a9e8132438d"],"befores":[{"name":"beforeSuite","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1647160093442,"stop":1647160094248}],"afters":[],"links":[],"start":1647160093410,"stop":1647160104516}

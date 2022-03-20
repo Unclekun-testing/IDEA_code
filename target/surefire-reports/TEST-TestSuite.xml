@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="13.992" tests="27" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="D:\rolls  royce\rest-assured\target\test-classes;D:\rolls  royce\rest-assured\target\classes;D:\prada\apache-maven-3.6.1\repo\io\rest-assured\rest-assured\4.2.0\rest-assured-4.2.0.jar;D:\prada\apache-maven-3.6.1\repo\org\codehaus\groovy\groovy\2.5.8\groovy-2.5.8.jar;D:\prada\apache-maven-3.6.1\repo\org\codehaus\groovy\groovy-xml\2.5.8\groovy-xml-2.5.8.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;D:\prada\apache-maven-3.6.1\repo\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;D:\prada\apache-maven-3.6.1\repo\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;D:\prada\apache-maven-3.6.1\repo\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;D:\prada\apache-maven-3.6.1\repo\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;D:\prada\apache-maven-3.6.1\repo\io\rest-assured\json-path\4.2.0\json-path-4.2.0.jar;D:\prada\apache-maven-3.6.1\repo\org\codehaus\groovy\groovy-json\2.5.8\groovy-json-2.5.8.jar;D:\prada\apache-maven-3.6.1\repo\io\rest-assured\rest-assured-common\4.2.0\rest-assured-common-4.2.0.jar;D:\prada\apache-maven-3.6.1\repo\io\rest-assured\xml-path\4.2.0\xml-path-4.2.0.jar;D:\prada\apache-maven-3.6.1\repo\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;D:\prada\apache-maven-3.6.1\repo\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar;D:\prada\apache-maven-3.6.1\repo\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;D:\prada\apache-maven-3.6.1\repo\javax\activation\activation\1.1.1\activation-1.1.1.jar;D:\prada\apache-maven-3.6.1\repo\org\testng\testng\7.0.0\testng-7.0.0.jar;D:\prada\apache-maven-3.6.1\repo\com\beust\jcommander\1.72\jcommander-1.72.jar;D:\prada\apache-maven-3.6.1\repo\cn\afterturn\easypoi-base\4.2.0\easypoi-base-4.2.0.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\poi\poi\4.1.1\poi-4.1.1.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\poi\poi-ooxml\4.1.1\poi-ooxml-4.1.1.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;D:\prada\apache-maven-3.6.1\repo\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\poi\poi-ooxml-schemas\4.1.1\poi-ooxml-schemas-4.1.1.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;D:\prada\apache-maven-3.6.1\repo\com\google\guava\guava\16.0.1\guava-16.0.1.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\commons\commons-lang3\3.2.1\commons-lang3-3.2.1.jar;D:\prada\apache-maven-3.6.1\repo\ognl\ognl\3.2.6\ognl-3.2.6.jar;D:\prada\apache-maven-3.6.1\repo\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;D:\prada\apache-maven-3.6.1\repo\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;D:\prada\apache-maven-3.6.1\repo\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;D:\prada\apache-maven-3.6.1\repo\cn\afterturn\easypoi-annotation\4.2.0\easypoi-annotation-4.2.0.jar;D:\prada\apache-maven-3.6.1\repo\com\alibaba\fastjson\1.2.62\fastjson-1.2.62.jar;D:\prada\apache-maven-3.6.1\repo\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar;D:\prada\apache-maven-3.6.1\repo\commons-dbutils\commons-dbutils\1.6\commons-dbutils-1.6.jar;D:\prada\apache-maven-3.6.1\repo\io\qameta\allure\allure-testng\2.12.1\allure-testng-2.12.1.jar;D:\prada\apache-maven-3.6.1\repo\io\qameta\allure\allure-java-commons\2.12.1\allure-java-commons-2.12.1.jar;D:\prada\apache-maven-3.6.1\repo\io\qameta\allure\allure-model\2.12.1\allure-model-2.12.1.jar;D:\prada\apache-maven-3.6.1\repo\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;D:\prada\apache-maven-3.6.1\repo\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;D:\prada\apache-maven-3.6.1\repo\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\tika\tika-core\1.20\tika-core-1.20.jar;D:\prada\apache-maven-3.6.1\repo\org\jooq\joor-java-8\0.9.10\joor-java-8-0.9.10.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\UNCLE_~1\AppData\Local\Temp\surefire7803192848625116382\surefirebooter6773066191106844591.jar C:\Users\Uncle_kun\AppData\Local\Temp\surefire7803192848625116382 2022-03-14T17-59-11_626-jvmRun1 surefire3752018903030886338tmp surefire_09078892343672033737tmp"/>
+    <property name="surefire.test.class.path" value="D:\rolls  royce\rest-assured\target\test-classes;D:\rolls  royce\rest-assured\target\classes;D:\prada\apache-maven-3.6.1\repo\io\rest-assured\rest-assured\4.2.0\rest-assured-4.2.0.jar;D:\prada\apache-maven-3.6.1\repo\org\codehaus\groovy\groovy\2.5.8\groovy-2.5.8.jar;D:\prada\apache-maven-3.6.1\repo\org\codehaus\groovy\groovy-xml\2.5.8\groovy-xml-2.5.8.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;D:\prada\apache-maven-3.6.1\repo\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;D:\prada\apache-maven-3.6.1\repo\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;D:\prada\apache-maven-3.6.1\repo\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;D:\prada\apache-maven-3.6.1\repo\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;D:\prada\apache-maven-3.6.1\repo\io\rest-assured\json-path\4.2.0\json-path-4.2.0.jar;D:\prada\apache-maven-3.6.1\repo\org\codehaus\groovy\groovy-json\2.5.8\groovy-json-2.5.8.jar;D:\prada\apache-maven-3.6.1\repo\io\rest-assured\rest-assured-common\4.2.0\rest-assured-common-4.2.0.jar;D:\prada\apache-maven-3.6.1\repo\io\rest-assured\xml-path\4.2.0\xml-path-4.2.0.jar;D:\prada\apache-maven-3.6.1\repo\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;D:\prada\apache-maven-3.6.1\repo\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar;D:\prada\apache-maven-3.6.1\repo\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;D:\prada\apache-maven-3.6.1\repo\javax\activation\activation\1.1.1\activation-1.1.1.jar;D:\prada\apache-maven-3.6.1\repo\org\testng\testng\7.0.0\testng-7.0.0.jar;D:\prada\apache-maven-3.6.1\repo\com\beust\jcommander\1.72\jcommander-1.72.jar;D:\prada\apache-maven-3.6.1\repo\cn\afterturn\easypoi-base\4.2.0\easypoi-base-4.2.0.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\poi\poi\4.1.1\poi-4.1.1.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\poi\poi-ooxml\4.1.1\poi-ooxml-4.1.1.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;D:\prada\apache-maven-3.6.1\repo\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\poi\poi-ooxml-schemas\4.1.1\poi-ooxml-schemas-4.1.1.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;D:\prada\apache-maven-3.6.1\repo\com\google\guava\guava\16.0.1\guava-16.0.1.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\commons\commons-lang3\3.2.1\commons-lang3-3.2.1.jar;D:\prada\apache-maven-3.6.1\repo\ognl\ognl\3.2.6\ognl-3.2.6.jar;D:\prada\apache-maven-3.6.1\repo\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;D:\prada\apache-maven-3.6.1\repo\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;D:\prada\apache-maven-3.6.1\repo\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;D:\prada\apache-maven-3.6.1\repo\cn\afterturn\easypoi-annotation\4.2.0\easypoi-annotation-4.2.0.jar;D:\prada\apache-maven-3.6.1\repo\com\alibaba\fastjson\1.2.62\fastjson-1.2.62.jar;D:\prada\apache-maven-3.6.1\repo\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar;D:\prada\apache-maven-3.6.1\repo\commons-dbutils\commons-dbutils\1.6\commons-dbutils-1.6.jar;D:\prada\apache-maven-3.6.1\repo\io\qameta\allure\allure-testng\2.12.1\allure-testng-2.12.1.jar;D:\prada\apache-maven-3.6.1\repo\io\qameta\allure\allure-java-commons\2.12.1\allure-java-commons-2.12.1.jar;D:\prada\apache-maven-3.6.1\repo\io\qameta\allure\allure-model\2.12.1\allure-model-2.12.1.jar;D:\prada\apache-maven-3.6.1\repo\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;D:\prada\apache-maven-3.6.1\repo\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;D:\prada\apache-maven-3.6.1\repo\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;D:\prada\apache-maven-3.6.1\repo\org\apache\tika\tika-core\1.20\tika-core-1.20.jar;D:\prada\apache-maven-3.6.1\repo\org\jooq\joor-java-8\0.9.10\joor-java-8-0.9.10.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="allure.results.directory" value="D:\rolls  royce\rest-assured\target/allure-results"/>
+    <property name="user.home" value="C:\Users\Uncle_kun"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_231\jre"/>
+    <property name="basedir" value="D:\rolls  royce\rest-assured"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\UNCLE_~1\AppData\Local\Temp\surefire7803192848625116382\surefirebooter6773066191106844591.jar;D:\prada\apache-maven-3.6.1\repo/org/aspectj/aspectjweaver/1.8.10/aspectjweaver-1.8.10.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_231\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_231-b11"/>
+    <property name="user.name" value="Uncle_kun"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="D:\prada\apache-maven-3.6.1\repo"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\UNCLE_~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_231"/>
+    <property name="user.dir" value="D:\rolls  royce\rest-assured"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.8.0_231\bin;D:\rose;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\Uncle_kun\AppData\Local\Microsoft\WindowsApps;D:\prada\apache-maven-3.6.1\bin;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.231-b11"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="register" classname="com.lemon.testcases.RegisterTest" time="0.804"/>
+  <testcase name="register" classname="com.lemon.testcases.RegisterTest" time="0.257"/>
+  <testcase name="register" classname="com.lemon.testcases.RegisterTest" time="0.263"/>
+  <testcase name="register" classname="com.lemon.testcases.RegisterTest" time="0.154"/>
+  <testcase name="register" classname="com.lemon.testcases.RegisterTest" time="0.144"/>
+  <testcase name="register" classname="com.lemon.testcases.RegisterTest" time="0.131"/>
+  <testcase name="register" classname="com.lemon.testcases.RegisterTest" time="0.138"/>
+  <testcase name="register" classname="com.lemon.testcases.RegisterTest" time="0.137"/>
+  <testcase name="register" classname="com.lemon.testcases.RegisterTest" time="0.199"/>
+  <testcase name="register" classname="com.lemon.testcases.RegisterTest" time="0.143"/>
+  <testcase name="register" classname="com.lemon.testcases.RegisterTest" time="0.137"/>
+  <testcase name="register" classname="com.lemon.testcases.RegisterTest" time="0.134"/>
+  <testcase name="register" classname="com.lemon.testcases.RegisterTest" time="0.127"/>
+  <testcase name="register" classname="com.lemon.testcases.RegisterTest" time="0.117"/>
+  <testcase name="Login" classname="com.lemon.testcases.LoginTest" time="0.227"/>
+  <testcase name="Login" classname="com.lemon.testcases.LoginTest" time="0.125"/>
+  <testcase name="Login" classname="com.lemon.testcases.LoginTest" time="0.138"/>
+  <testcase name="Login" classname="com.lemon.testcases.LoginTest" time="0.131"/>
+  <testcase name="Login" classname="com.lemon.testcases.LoginTest" time="0.139"/>
+  <testcase name="Login" classname="com.lemon.testcases.LoginTest" time="0.14"/>
+  <testcase name="Login" classname="com.lemon.testcases.LoginTest" time="0.202"/>
+  <testcase name="Login" classname="com.lemon.testcases.LoginTest" time="0.134"/>
+  <testcase name="Login" classname="com.lemon.testcases.LoginTest" time="0.128"/>
+  <testcase name="Login" classname="com.lemon.testcases.LoginTest" time="0.194"/>
+  <testcase name="Login" classname="com.lemon.testcases.LoginTest" time="0.195"/>
+  <testcase name="Login" classname="com.lemon.testcases.LoginTest" time="0.195"/>
+  <testcase name="Login" classname="com.lemon.testcases.LoginTest" time="0.196"/>
+</testsuite>

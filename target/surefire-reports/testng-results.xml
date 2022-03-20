@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="28" passed="27">
+  <reporter-output>
+  </reporter-output>
+  <suite name="测试套件" duration-ms="11715" started-at="2022-03-14T17:59:15 CST" finished-at="2022-03-14T17:59:26 CST">
+    <groups>
+    </groups>
+    <test name="测试" duration-ms="11715" started-at="2022-03-14T17:59:15 CST" finished-at="2022-03-14T17:59:26 CST">
+      <class name="com.lemon.testcases.LoginTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.lemon.testcases.LoginTest@4763c727]" name="beforeClass" is-config="true" duration-ms="5089" started-at="2022-03-14T17:59:15 CST" finished-at="2022-03-14T17:59:20 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="Login(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.LoginTest@4763c727]" name="Login" duration-ms="226" started-at="2022-03-14T17:59:24 CST" data-provider="getLoginDatas" finished-at="2022-03-14T17:59:24 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=2, interfaceName='login', title='正常登录', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "13355510823",
+  "pwd": "lemon666"
+}', expected='{
+    "code": 0,
+    "msg": "OK",
+"data.leave_amount":0.0,
+"data.mobile_phone":"13355510823"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Login(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.LoginTest@4763c727]" name="Login" duration-ms="123" started-at="2022-03-14T17:59:24 CST" data-provider="getLoginDatas" finished-at="2022-03-14T17:59:24 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=3, interfaceName='login', title='手机号为空', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "",
+  "pwd": "lemon666"
+}', expected='{
+  "code": 1,
+  "msg": "手机号码为空"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Login(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.LoginTest@4763c727]" name="Login" duration-ms="137" started-at="2022-03-14T17:59:24 CST" data-provider="getLoginDatas" finished-at="2022-03-14T17:59:25 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=4, interfaceName='login', title='手机号为10位', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "1581554176",
+  "pwd": "lemon666",
+  "type":"1",
+  "reg_name":"mengmeng"
+}', expected='{
+  "code": 2,
+  "msg": "无效的手机格式"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Login(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.LoginTest@4763c727]" name="Login" duration-ms="130" started-at="2022-03-14T17:59:25 CST" data-provider="getLoginDatas" finished-at="2022-03-14T17:59:25 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=5, interfaceName='login', title='手机号为12位', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "158155417643",
+  "pwd": "lemon666"
+}', expected='{
+  "code": 2,
+  "msg": "无效的手机格式"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Login(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.LoginTest@4763c727]" name="Login" duration-ms="139" started-at="2022-03-14T17:59:25 CST" data-provider="getLoginDatas" finished-at="2022-03-14T17:59:25 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=6, interfaceName='login', title='手机号包含非数字', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "1581554176a",
+  "pwd": "lemon666"
+}', expected='{
+  "code": 2,
+  "msg": "无效的手机格式"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Login(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.LoginTest@4763c727]" name="Login" duration-ms="139" started-at="2022-03-14T17:59:25 CST" data-provider="getLoginDatas" finished-at="2022-03-14T17:59:25 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=7, interfaceName='login', title='不存在的号段', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "11015541764",
+  "pwd": "lemon666"
+}', expected='{
+  "code": 2,
+  "msg": "无效的手机格式"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Login(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.LoginTest@4763c727]" name="Login" duration-ms="201" started-at="2022-03-14T17:59:25 CST" data-provider="getLoginDatas" finished-at="2022-03-14T17:59:25 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=8, interfaceName='login', title='输入未注册的手机号', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "13693369120",
+  "pwd": "lemon666"
+}', expected='{
+  "code": 1001,
+  "msg": "账号信息错误"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Login(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.LoginTest@4763c727]" name="Login" duration-ms="134" started-at="2022-03-14T17:59:25 CST" data-provider="getLoginDatas" finished-at="2022-03-14T17:59:25 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=9, interfaceName='login', title='密码为空', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "15815541764",
+  "pwd": ""
+}', expected='{
+  "code": 1,
+  "msg": "密码为空"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Login(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.LoginTest@4763c727]" name="Login" duration-ms="128" started-at="2022-03-14T17:59:25 CST" data-provider="getLoginDatas" finished-at="2022-03-14T17:59:25 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=10, interfaceName='login', title='密码为7位', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "1515815541764",
+  "pwd": "lemon666"
+}', expected='{
+  "code": 2,
+  "msg": "无效的手机格式"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Login(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.LoginTest@4763c727]" name="Login" duration-ms="195" started-at="2022-03-14T17:59:25 CST" data-provider="getLoginDatas" finished-at="2022-03-14T17:59:26 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=11, interfaceName='login', title='密码为17位', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "15815541764",
+  "pwd": "lemon123456789012"
+}', expected='{
+  "code": 1001,
+  "msg": "账号信息错误"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Login(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.LoginTest@4763c727]" name="Login" duration-ms="194" started-at="2022-03-14T17:59:26 CST" data-provider="getLoginDatas" finished-at="2022-03-14T17:59:26 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=12, interfaceName='login', title='密码错误-不区分大小写', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "15815541764",
+  "pwd": "LEMON666"
+}', expected='{
+  "code": 1001,
+  "msg": "账号信息错误"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Login(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.LoginTest@4763c727]" name="Login" duration-ms="194" started-at="2022-03-14T17:59:26 CST" data-provider="getLoginDatas" finished-at="2022-03-14T17:59:26 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=13, interfaceName='login', title='密码错误-过长', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "15815541763",
+  "pwd": "lemon66666"
+}', expected='{
+  "code": 1001,
+  "msg": "账号信息错误"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Login(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.LoginTest@4763c727]" name="Login" duration-ms="194" started-at="2022-03-14T17:59:26 CST" data-provider="getLoginDatas" finished-at="2022-03-14T17:59:26 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=14, interfaceName='login', title='密码错误-过短', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/login', inputParams='{
+  "mobile_phone": "15815541763",
+  "pwd": "lemon6"
+}', expected='{
+  "code": 1001,
+  "msg": "账号信息错误"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+      </class> <!-- com.lemon.testcases.LoginTest -->
+      <class name="com.lemon.testcases.RegisterTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.lemon.testcases.RegisterTest@5b64c4b7]" name="beforeSuite" is-config="true" duration-ms="819" started-at="2022-03-14T17:59:14 CST" finished-at="2022-03-14T17:59:15 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.lemon.testcases.RegisterTest@5b64c4b7]" name="setup" is-config="true" duration-ms="1431" started-at="2022-03-14T17:59:20 CST" finished-at="2022-03-14T17:59:21 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="register(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.RegisterTest@5b64c4b7]" name="register" duration-ms="757" started-at="2022-03-14T17:59:21 CST" data-provider="getRegisterDatas" finished-at="2022-03-14T17:59:22 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=1, interfaceName='register', title='正常注册-普通用户，昵称为空，密码16位', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/register', inputParams='{
+  "mobile_phone": "13308156753",
+  "pwd": "lemon666",
+  "type":"1"
+}', expected='{
+    "code": 0,
+    "msg": "OK",
+    "data.reg_name": "小柠檬",
+"data.mobile_phone":"13308156753"   
+      
+       
+}', extractExper='null', dbAssert='{"select count(*)from member where mobile_phone= '13693368701';":1}'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="register(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.RegisterTest@5b64c4b7]" name="register" duration-ms="256" started-at="2022-03-14T17:59:22 CST" data-provider="getRegisterDatas" finished-at="2022-03-14T17:59:22 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=2, interfaceName='register', title='正常注册-普通用户，type为空，密码8位', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/register', inputParams='{
+  "mobile_phone": "13316843861",
+  "pwd": "lemon666",
+  "type":"",
+  "reg_name":"tudou"
+}', expected='{
+  "code": 0,
+  "msg": "OK",
+   "data.reg_name": "tudou",    "data.mobile_phone":"13316843861"   
+    
+ 
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="register(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.RegisterTest@5b64c4b7]" name="register" duration-ms="264" started-at="2022-03-14T17:59:22 CST" data-provider="getRegisterDatas" finished-at="2022-03-14T17:59:23 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=3, interfaceName='register', title='正常注册-普通用户，昵称为空，密码16位', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/register', inputParams='{
+  "mobile_phone": "13365021616",
+  "pwd": "lemon12345678901",
+  "type":"1",
+  "reg_name":""
+}', expected='{
+  "code": 0,
+  "msg": "OK",
+    "data.reg_name": "",
+"data.mobile_phone":"13365021616"  
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="register(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.RegisterTest@5b64c4b7]" name="register" duration-ms="153" started-at="2022-03-14T17:59:23 CST" data-provider="getRegisterDatas" finished-at="2022-03-14T17:59:23 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=4, interfaceName='register', title='手机号为空', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/register', inputParams='{
+  "mobile_phone": "",
+  "pwd": "lemon666",
+  "type":"1",
+  "reg_name":"mengmeng"
+}', expected='{
+  "code": 1,
+  "msg": "手机号为空"
+
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="register(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.RegisterTest@5b64c4b7]" name="register" duration-ms="144" started-at="2022-03-14T17:59:23 CST" data-provider="getRegisterDatas" finished-at="2022-03-14T17:59:23 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=5, interfaceName='register', title='手机号为10位', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/register', inputParams='{
+  "mobile_phone": "1581554176",
+  "pwd": "lemon666",
+  "type":"1",
+  "reg_name":"mengmeng"
+}', expected='{
+  "code": 2,
+  "msg": "无效的手机格式"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="register(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.RegisterTest@5b64c4b7]" name="register" duration-ms="131" started-at="2022-03-14T17:59:23 CST" data-provider="getRegisterDatas" finished-at="2022-03-14T17:59:23 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=6, interfaceName='register', title='手机号为12位', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/register', inputParams='{
+  "mobile_phone": "158155417633",
+  "pwd": "lemon666",
+  "type":"1",
+  "reg_name":"mengmeng"
+}', expected='{
+  "code": 2,
+  "msg": "无效的手机格式"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="register(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.RegisterTest@5b64c4b7]" name="register" duration-ms="137" started-at="2022-03-14T17:59:23 CST" data-provider="getRegisterDatas" finished-at="2022-03-14T17:59:23 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=7, interfaceName='register', title='手机号包含非数字', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/register', inputParams='{
+  "mobile_phone": "1581554176a",
+  "pwd": "lemon123456",
+  "type":"1",
+  "reg_name":"mengmeng"
+}', expected='{
+  "code": 2,
+  "msg": "无效的手机格式"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="register(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.RegisterTest@5b64c4b7]" name="register" duration-ms="138" started-at="2022-03-14T17:59:23 CST" data-provider="getRegisterDatas" finished-at="2022-03-14T17:59:23 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=8, interfaceName='register', title='手机号为不存在的号段', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/register', inputParams='{
+  "mobile_phone": "11015541763",
+  "pwd": "lemon123456",
+  "type":"1",
+  "reg_name":"mengmeng"
+}', expected='{
+  "code": 2,
+  "msg": "无效的手机格式"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="register(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.RegisterTest@5b64c4b7]" name="register" duration-ms="199" started-at="2022-03-14T17:59:23 CST" data-provider="getRegisterDatas" finished-at="2022-03-14T17:59:23 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=9, interfaceName='register', title='手机号输入已注册号码', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/register', inputParams='{
+  "mobile_phone": "13693368718",
+  "pwd": "lemon666",
+  "type":"1",
+  "reg_name":"mengmeng"
+}', expected='{
+  "code": 2,
+  "msg": "账号已存在"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="register(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.RegisterTest@5b64c4b7]" name="register" duration-ms="142" started-at="2022-03-14T17:59:23 CST" data-provider="getRegisterDatas" finished-at="2022-03-14T17:59:24 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=10, interfaceName='register', title='密码为空', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/register', inputParams='{
+  "mobile_phone": "13693368737",
+  "pwd": "",
+  "type":"1",
+  "reg_name":"mengmeng"
+}', expected='{
+  "code": 1,
+  "msg": "密码为空"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="register(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.RegisterTest@5b64c4b7]" name="register" duration-ms="136" started-at="2022-03-14T17:59:24 CST" data-provider="getRegisterDatas" finished-at="2022-03-14T17:59:24 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=11, interfaceName='register', title='密码为7位', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/register', inputParams='{
+  "mobile_phone": "13693368738",
+  "pwd": "lemon66",
+  "type":"1",
+  "reg_name":"mengmeng"
+}', expected='{
+  "code": 2,
+  "msg": "密码格式为8到16位"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="register(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.RegisterTest@5b64c4b7]" name="register" duration-ms="134" started-at="2022-03-14T17:59:24 CST" data-provider="getRegisterDatas" finished-at="2022-03-14T17:59:24 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=12, interfaceName='register', title='密码为17位', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/register', inputParams='{
+  "mobile_phone": "13693368739",
+  "pwd": "lemon123456789012",
+  "type":"1",
+  "reg_name":"mengmeng"
+}', expected='{
+  "code": 2,
+  "msg": "密码格式为8到16位"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="register(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.RegisterTest@5b64c4b7]" name="register" duration-ms="126" started-at="2022-03-14T17:59:24 CST" data-provider="getRegisterDatas" finished-at="2022-03-14T17:59:24 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=13, interfaceName='register', title='type输入非0、1', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/register', inputParams='{
+  "mobile_phone": "13693368740",
+  "pwd": "lemon666",
+  "type":"3",
+  "reg_name":"mengmeng"
+}', expected='{
+  "code": 2,
+  "msg": "不支持的用户类型"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="register(com.lemon.pojo.CasePojo)[pri:0, instance:com.lemon.testcases.RegisterTest@5b64c4b7]" name="register" duration-ms="117" started-at="2022-03-14T17:59:24 CST" data-provider="getRegisterDatas" finished-at="2022-03-14T17:59:24 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CasePojo{caseId=14, interfaceName='register', title='昵称超出10位', requestHeader='{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}', method='POST', url='/member/register', inputParams='{
+  "mobile_phone": "13693368741",
+  "pwd": "lemon666",
+  "type":"1",
+  "reg_name":"小柠檬mengmeng"
+}', expected='{
+  "code": 2,
+  "msg": "用户昵称长度超过10位"
+}', extractExper='null', dbAssert='null'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+      </class> <!-- com.lemon.testcases.RegisterTest -->
+    </test> <!-- 测试 -->
+  </suite> <!-- 测试套件 -->
+</testng-results>
